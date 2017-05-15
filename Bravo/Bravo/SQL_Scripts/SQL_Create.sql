@@ -54,9 +54,9 @@ CREATE TABLE Software_in_Raum
 );
 GO
 
-CREATE TABLE Geraetattribut
+CREATE TABLE Geraetkomponente
 (
-	ID int IDENTITY(1,1) CONSTRAINT GeraetattributeID PRIMARY KEY,
+	ID int IDENTITY(1,1) CONSTRAINT GeraetkomponenteID PRIMARY KEY,
 	Bezeichnung varchar(max)
 );
 GO
@@ -70,7 +70,7 @@ GO
 
 CREATE TABLE Geraet
 (
-	ID int IDENTITY(1,1) CONSTRAINT KomponenteID PRIMARY KEY,
+	ID int IDENTITY(1,1) CONSTRAINT GeraetID PRIMARY KEY,
 	Bezeichnung varchar(max),
 	Hersteller_ID int CONSTRAINT FK_GeraetHersteller FOREIGN KEY REFERENCES Hersteller(ID),
 	Gewaehrleistung_Monate INT,
@@ -79,23 +79,25 @@ CREATE TABLE Geraet
 	Einkaufsdatum date,
 	Einkaufbeleg Binary,
 	Raum_ID int CONSTRAINT FK_GeraetRaum FOREIGN KEY REFERENCES Raum(ID),
+	Aktive bit,
+	Defekt bit,
 	Notiz varchar(max)
 );
 GO
 
-CREATE TABLE Geraet_Attributinformation
+CREATE TABLE Geraetkomponente_information
 (
-	Komponente_ID int CONSTRAINT FK_GeraetattributinformationGeraet FOREIGN KEY REFERENCES Geraet(ID),
-	Attribute_ID int CONSTRAINT FK_GeraetattributinformationGeraetattribute FOREIGN KEY REFERENCES Geraetattribut(ID),
-	Hersteller_ID int CONSTRAINT FK_GeraetattributinformationHersteller FOREIGN KEY REFERENCES Hersteller(ID),
+	Komponente_ID int CONSTRAINT FK_GeraetkomponenteinformationGeraet FOREIGN KEY REFERENCES Geraet(ID),
+	Attribute_ID int CONSTRAINT FK_GeraetkomponenteinformationGeraetattribute FOREIGN KEY REFERENCES Geraetkomponente(ID),
+	Hersteller_ID int CONSTRAINT FK_GeraetkomponenteinformationHersteller FOREIGN KEY REFERENCES Hersteller(ID),
 	Bezeichnung varchar(max) 
 );
 GO
 
-CREATE TABLE Geraetart_Attribute_Vorgabe
+CREATE TABLE Geraetart_Komponenten_Vorgabe
 (
-	Art_ID int CONSTRAINT FK_GeraetnattributvorgabeGeraetart FOREIGN KEY REFERENCES Geraetart(ID),
-	Attribute_ID int CONSTRAINT FK_GeraetattributGeraetattribute FOREIGN KEY REFERENCES Geraetattribut(ID)
+	Art_ID int CONSTRAINT FK_GeraetnkomponentenvorgabeGeraetart FOREIGN KEY REFERENCES Geraetart(ID),
+	Attribute_ID int CONSTRAINT FK_GeraetkomponentenGeraetattribute FOREIGN KEY REFERENCES Geraetkomponente(ID)
 );
 GO
 
