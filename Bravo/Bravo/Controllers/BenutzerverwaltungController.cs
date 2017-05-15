@@ -13,5 +13,15 @@ namespace Bravo.Controllers
         {
             return View();
         }
+
+        public ActionResult BenutzerDetails()
+        {
+            return View();
+        }
+
+        public ActionResult BenutzerHinzufügen()
+        {
+            return View();
+        }
     }
 }
