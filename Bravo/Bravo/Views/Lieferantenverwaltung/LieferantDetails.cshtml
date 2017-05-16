@@ -4,9 +4,19 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="navbar-fixed-side-child">
-    <p><a href="~/Lieferantenverwaltung/Index">Lieferanten-Liste</a></p>
-    <p><a href="~/Lieferantenverwaltung/LieferantHinzufuegen">Lieferant hinzufügen</a></p>
+<div class="navbar_side_child navbar-inverse navbar-fixed-side-child">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Lieferanten-Liste", "Index", "Lieferantenverwaltung")</li>
+            <li>@Html.ActionLink("Lieferant hinzufügen", "LieferantHinzufuegen", "Lieferantenverwaltung")</li>
+        </ul>
+    </div>
 </div>
 
 <h2>LieferantDetails</h2>

@@ -4,13 +4,27 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="navbar-fixed-side-child">
-    <p><a href="~/Geraeteverwaltung/Index">Geräte-Liste</a></p>
-    <p><a href="~/Geraeteverwaltung/GeraetHinzufuegen">Gerät hinzufügen</a></p>
-    <p><a href="~/Geraetkomponentenverwaltung/Index">Gerätkomponenten-Liste</a></p>
-    <p><a href="~/Geraetkomponentenverwaltung/GeraetkomponenteHinzufuegen">Gerätekomponente hinzufügen</a></p>
-    <p><a href="~/Geraeteartverwaltung/Index">Geräteart-Liste</a></p>
-    <p><a href="~/Geraeteartverwaltung/GeraeteartHinzufuegen">Geräteart hinzufügen</a></p>
+<div class="navbar_side_child navbar-inverse navbar-fixed-side-child">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Benutzer-Liste", "Index", "Geraeteverwaltung")</li>
+            <li>@Html.ActionLink("Benutzer hinzufügen", "BenutzerHinzufuegen", "Geraeteverwaltung")</li>
+            <li>@Html.ActionLink("Gerätkomponenten-Liste", "Index", "Geraetkomponentenverwaltung")</li>
+            <li>@Html.ActionLink("Gerätkomponente hinzufügen", "GeraetkomponenteHinzufuegen", "Geraetkomponentenverwaltung")</li>
+            <li>@Html.ActionLink("Geräteart-Liste", "Index", "Geraeteartverwaltung")</li>
+            <li>@Html.ActionLink("Geräteart hinzufügen", "GeraeteartHinzufuegen", "Geraeteartverwaltung")</li>
+        </ul>
+    </div>
 </div>
 
 <h2>Gerät bearbeiten</h2>
