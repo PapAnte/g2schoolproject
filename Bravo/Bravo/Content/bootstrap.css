@@ -4537,6 +4537,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
   text-shadow: 2px 0px 0px #000000;
   background-color: transparent;
+  text-decoration: underline;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
