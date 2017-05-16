@@ -18,8 +18,8 @@
 }
 
 <div>
-    <p><a href="~/Views/Benutzerverwaltung/BenutzerDetails.cshtml">Benutzer-Liste</a></p>
-    <p><a href="~/Views/Benutzerverwaltung/BenutzerHinzufügen.cshtml">Benutzer hinzufügen</a></p>
+    <p><a href="~/Benutzerverwaltung/Index">Benutzer-Liste</a></p>
+    <p><a href="~/Benutzerverwaltung/BenutzerHinzufuegen">Benutzer hinzufügen</a></p>
 </div>
 
 <h2>Benutzerverwaltung</h2>
@@ -28,6 +28,18 @@
 
 
 <table style="width:100%;">
-    <tr><td>Anrede</td><td>Titel</td><td>Name</td><td>Geburtsdatum</td><td>Benutzername</td><td>E-Mail</td><td>Rechtegruppe</td><td>Erstellt am</td><td>Ändern</td><td>Löschen</td></tr>
-    <tr><td>@anrede</td><td>@titel</td><td>@name</td><td>@geburtsdatum</td><td>@benutzername</td><td>@email</td><td>@rechtegruppe</td><td>@erstelldatum</td><td>+</td><td>-</td></tr>
+    <tr><td>Anrede</td><td><input id="anrede" type="text" value="Herr" /></td></tr>
+    <tr><td>Titel</td><td><input id="titel" type="text" value="" /></td></tr>
+    <tr><td>Name</td><td><input id="name" type="text" value="Max Mustermann" /></td></tr>
+    <tr><td>Geburtsdatum</td><td><input id="geburtsdatum" type="text" value="00.00.0000" /></td></tr>
+    <tr><td>Benutzername</td><td><input id="benutzername" type="text" value="mmustermann" /></td></tr>
+    <tr><td>E-Mail</td><td><input id="email" type="text" value="email@email.email" /></td></tr>
+    <tr><td>Rechtegruppe</td><td><input id="rechtegruppe" type="text" value="42" /></td></tr>
+    <tr><td>Erstellt am</td><td><input id="erstelldatum" type="text" value="11.11.1111" /></td></tr>
 </table>
+
+
+
+<input id="aendern" type="submit" value="Ändern" />
+<input id="loeschen" type="submit" value="Löschen" />
+<input id="zurueck" type="submit" value="Zurück" />

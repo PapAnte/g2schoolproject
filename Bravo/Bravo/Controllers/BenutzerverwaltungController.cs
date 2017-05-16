@@ -19,7 +19,7 @@ namespace Bravo.Controllers
             return View();
         }
 
-        public ActionResult BenutzerHinzufügen()
+        public ActionResult BenutzerHinzufuegen()
         {
             return View();
         }
