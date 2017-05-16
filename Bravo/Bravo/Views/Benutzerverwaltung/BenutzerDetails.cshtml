@@ -2,10 +2,32 @@
 @{
     ViewBag.Title = "BenutzerDetails";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string anrede, titel, name, geburtsdatum, benutzername, email, rechtegruppe, erstelldatum;
+
+
+    anrede = "Herr";
+    titel = "";
+    name = "Max Mustermann";
+    geburtsdatum = DateTime.Today.ToShortDateString();
+    benutzername = "mmustermann";
+    email = "max.mustermann@mustermail.com";
+    rechtegruppe = "Admin";
+    erstelldatum = DateTime.Today.ToShortDateString();
+
 }
+
+<div>
+    <p><a href="~/Views/Benutzerverwaltung/BenutzerDetails.cshtml">Benutzer-Liste</a></p>
+    <p><a href="~/Views/Benutzerverwaltung/BenutzerHinzufügen.cshtml">Benutzer hinzufügen</a></p>
+</div>
 
 <h2>Benutzerverwaltung</h2>
 <h3>Detailseite</h3>
 
 
-<table style="width:100%;"><tr><td>Benutzername</td><td>...</td><td>+</td></tr><tr><td>Anrede</td><td>...</td><td>...</td></tr><tr><td>Name</td><td>...</td><td>...</td></tr></table>
+
+<table style="width:100%;">
+    <tr><td>Anrede</td><td>Titel</td><td>Name</td><td>Geburtsdatum</td><td>Benutzername</td><td>E-Mail</td><td>Rechtegruppe</td><td>Erstellt am</td><td>Ändern</td><td>Löschen</td></tr>
+    <tr><td>@anrede</td><td>@titel</td><td>@name</td><td>@geburtsdatum</td><td>@benutzername</td><td>@email</td><td>@rechtegruppe</td><td>@erstelldatum</td><td>+</td><td>-</td></tr>
+</table>
