@@ -31,12 +31,12 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li>@Html.ActionLink("Benutzer", "Index", "Benutzerverwaltung")</li>
-                        <li>@Html.ActionLink("Geräte", "", "")</li>
-                        <li>@Html.ActionLink("Komponenten", "", "")</li>
-                        <li>@Html.ActionLink("Software", "", "")</li>
-                        <li>@Html.ActionLink("Raum", "", "")</li>
-                        <li>@Html.ActionLink("Lieferanten", "", "")</li>
-                        <li>@Html.ActionLink("Ticket", "", "")</li>
+                        <li>@Html.ActionLink("Geräte", "Index", "Geraeteverwaltung")</li>
+                        <li>@Html.ActionLink("Komponenten", "Index", "Komponentenverwaltung")</li>
+                        <li>@Html.ActionLink("Software", "Index", "Softwareverwaltung")</li>
+                        <li>@Html.ActionLink("Raum", "Index", "Raumverwaltung")</li>
+                        <li>@Html.ActionLink("Lieferanten", "Index", "Lieferantenverwaltung")</li>
+                        <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
                     </ul>
                     @Html.Partial("_LoginPartial")
                 </div>
