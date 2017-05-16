@@ -4185,7 +4185,17 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-fixed-side {
   float: left;
-  position: fixed;
+  position: relative;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 142.25px;
+  border-width: 0 0 1px;
+}
+
+.navbar-fixed-side-child {
+  float: left;
+  position: absolute;
   right: 0;
   left: 0;
   height: 100%;
