@@ -4022,11 +4022,16 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
 }
 
-.navbar {
+.navbar_header {
   position: relative;
   z-index: 1000;
   min-height: 50px;
   margin-bottom: 20px;
+}
+
+.navbar_footer {
+  z-index: 1000;
+  height: 40px;
   border: 1px solid transparent;
 }
 
@@ -4174,7 +4179,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-fixed-bottom {
-  position: relative;
+  position: fixed;
   right: 0;
   left: 0;
   border-width: 0 0 1px;
@@ -4565,6 +4570,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
   border-color: #101010;
+  width: 100%;
 }
 
 .navbar-inverse .navbar-nav > .open > a,
