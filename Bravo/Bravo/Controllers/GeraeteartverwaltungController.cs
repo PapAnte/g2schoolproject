@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Bravo.Controllers
 {
-    public class GeraeteartController : Controller
+    public class GeraeteartverwaltungController : Controller
     {
         // GET: Geraeteart
         public ActionResult Index()

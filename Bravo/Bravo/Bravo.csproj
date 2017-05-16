@@ -169,13 +169,15 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BenutzerverwaltungController.cs" />
-    <Compile Include="Controllers\GeraeteartController.cs" />
+    <Compile Include="Controllers\GeraeteartverwaltungController.cs" />
     <Compile Include="Controllers\GeraeteverwaltungController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KomponentenverwaltungController.cs" />
+    <Compile Include="Controllers\GeraetekomponentenverwaltungController.cs" />
     <Compile Include="Controllers\LieferantenverwaltungController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RaumverwaltungController.cs" />
+    <Compile Include="Controllers\SoftwareverwaltungController.cs" />
+    <Compile Include="Controllers\TicketverwaltungController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -251,15 +253,19 @@
     <Content Include="Views\Raumverwaltung\Index.cshtml" />
     <Content Include="Views\Raumverwaltung\RaumHinzufuegen.cshtml" />
     <Content Include="Views\Raumverwaltung\RaumDetails.cshtml" />
-    <Content Include="Views\Komponentenverwaltung\Index.cshtml" />
-    <Content Include="Views\Komponentenverwaltung\KomponenteHinzufuegen.cshtml" />
-    <Content Include="Views\Komponentenverwaltung\KomponenteDetails.cshtml" />
+    <Content Include="Views\Geraetekomponentenverwaltung\Index.cshtml" />
+    <Content Include="Views\Geraetekomponentenverwaltung\GeraetekomponenteHinzufuegen.cshtml" />
+    <Content Include="Views\Geraetekomponentenverwaltung\GeraetekomponenteDetails.cshtml" />
     <Content Include="Views\Geraeteverwaltung\Index.cshtml" />
     <Content Include="Views\Geraeteverwaltung\GeraetHinzufuegen.cshtml" />
     <Content Include="Views\Geraeteverwaltung\GeraetDetails.cshtml" />
-    <Content Include="Views\Geraeteart\Index.cshtml" />
-    <Content Include="Views\Geraeteart\GeraeteartHinzufuegen.cshtml" />
-    <Content Include="Views\Geraeteart\GeraeteartDetails.cshtml" />
+    <Content Include="Views\Geraeteartverwaltung\Index.cshtml" />
+    <Content Include="Views\Geraeteartverwaltung\GeraeteartHinzufuegen.cshtml" />
+    <Content Include="Views\Geraeteartverwaltung\GeraeteartDetails.cshtml" />
+    <Content Include="Views\Softwareverwaltung\Index.cshtml" />
+    <Content Include="Views\Softwareverwaltung\SoftwareHinzufuegen.cshtml" />
+    <Content Include="Views\Softwareverwaltung\SoftwareDetails.cshtml" />
+    <Content Include="Views\Ticketverwaltung\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -6,20 +6,20 @@ using System.Web.Mvc;
 
 namespace Bravo.Controllers
 {
-    public class KomponentenverwaltungController : Controller
+    public class SoftwareverwaltungController : Controller
     {
-        // GET: Komponentenverwaltung
+        // GET: Software
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult KomponenteHinzufuegen()
+        public ActionResult SoftwareHinzufuegen()
         {
             return View();
         }
 
-        public ActionResult KomponenteDetails()
+        public ActionResult SoftwareDetails()
         {
             return View();
         }
