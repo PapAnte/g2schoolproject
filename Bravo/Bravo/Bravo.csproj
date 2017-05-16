@@ -181,12 +181,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="ITVerwaltungDBInterface\DBAccessMethod.cs" />
+    <Compile Include="ITVerwaltungDBInterface\DBModule.cs" />
     <Compile Include="ITVerwaltungDBInterface\DBResultMessage.cs" />
+    <Compile Include="ITVerwaltungDBInterface\DBTableSinglePK.cs" />
+    <Compile Include="ITVerwaltungDBInterface\DBTableDoublePK.cs" />
     <Compile Include="ITVerwaltungDBInterface\ITVerwaltungDatabaseMgt.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionVarMgt.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
