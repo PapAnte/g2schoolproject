@@ -1,19 +1,20 @@
 ﻿
 @{
-    ViewBag.Title = "BenutzerDetails";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+        ViewBag.Title = "BenutzerDetails";
+        Layout = "~/Views/Shared/_Layout.cshtml";
 
-    string anrede, titel, name, geburtsdatum, benutzername, email, rechtegruppe, erstelldatum;
+        string anrede, titel, name, geburtsdatum, benutzername, email, rechtegruppe, erstelldatum;
 
 
-    anrede = "Herr";
-    titel = "";
-    name = "Max Mustermann";
-    geburtsdatum = DateTime.Today.ToShortDateString();
-    benutzername = "mmustermann";
-    email = "max.mustermann@mustermail.com";
-    rechtegruppe = "Admin";
-    erstelldatum = DateTime.Today.ToShortDateString();
+        anrede = "Herr";
+        titel = "";
+        name = "Max Mustermann";
+        geburtsdatum = DateTime.Today.ToShortDateString();
+        benutzername = "mmustermann";
+        email = "max.mustermann@mustermail.com";
+        rechtegruppe = "Admin";
+        erstelldatum = DateTime.Today.ToShortDateString();
+
 
 }
 
@@ -28,18 +29,18 @@
 
 
 <table style="width:100%;">
-    <tr><td>Anrede</td><td><input id="anrede" type="text" value="Herr" /></td></tr>
+    <tr><td>Anrede</td><td><input id="anrede" type="text" value="@anrede" /></td></tr>
     <tr><td>Titel</td><td><input id="titel" type="text" value="" /></td></tr>
-    <tr><td>Name</td><td><input id="name" type="text" value="Max Mustermann" /></td></tr>
-    <tr><td>Geburtsdatum</td><td><input id="geburtsdatum" type="text" value="00.00.0000" /></td></tr>
-    <tr><td>Benutzername</td><td><input id="benutzername" type="text" value="mmustermann" /></td></tr>
-    <tr><td>E-Mail</td><td><input id="email" type="text" value="email@email.email" /></td></tr>
-    <tr><td>Rechtegruppe</td><td><input id="rechtegruppe" type="text" value="42" /></td></tr>
-    <tr><td>Erstellt am</td><td><input id="erstelldatum" type="text" value="11.11.1111" /></td></tr>
+    <tr><td>Name</td><td><input id="name" type="text" value="@name" /></td></tr>
+    <tr><td>Geburtsdatum</td><td><input id="geburtsdatum" type="text" value="@geburtsdatum" /></td></tr>
+    <tr><td>Benutzername</td><td><input id="benutzername" type="text" value="@benutzername" /></td></tr>
+    <tr><td>E-Mail</td><td><input id="email" type="text" value="@email" /></td></tr>
+    <tr><td>Rechtegruppe</td><td><input id="rechtegruppe" type="text" value="@rechtegruppe" /></td></tr>
+    <tr><td>Erstellt am</td><td><input id="erstelldatum" type="text" value="@erstelldatum" /></td></tr>
 </table>
 
 
 
-<input id="aendern" type="submit" value="Ändern" />
-<input id="loeschen" type="submit" value="Löschen" />
-<input id="zurueck" type="submit" value="Zurück" />
+<input id="aendern" type="submit" value="Ändern" onclick="btnAendern_Click"/>
+<input id="loeschen" type="submit" value="Löschen" onclick="btnLoeschen_Click"/>
+<input id="zurueck" type="submit" value="Zurück" onclick="btnZurueck_Click"/>

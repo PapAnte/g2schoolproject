@@ -169,8 +169,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BenutzerverwaltungController.cs" />
+    <Compile Include="Controllers\GeraeteartController.cs" />
+    <Compile Include="Controllers\GeraeteverwaltungController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KomponentenverwaltungController.cs" />
+    <Compile Include="Controllers\LieferantenverwaltungController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RaumverwaltungController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -240,6 +245,21 @@
     <Content Include="Views\Benutzerverwaltung\Index.cshtml" />
     <Content Include="Views\Benutzerverwaltung\BenutzerDetails.cshtml" />
     <Content Include="Views\Benutzerverwaltung\BenutzerHinzufuegen.cshtml" />
+    <Content Include="Views\Lieferantenverwaltung\Index.cshtml" />
+    <Content Include="Views\Lieferantenverwaltung\LieferantHinzufuegen.cshtml" />
+    <Content Include="Views\Lieferantenverwaltung\LieferantDetails.cshtml" />
+    <Content Include="Views\Raumverwaltung\Index.cshtml" />
+    <Content Include="Views\Raumverwaltung\RaumHinzufuegen.cshtml" />
+    <Content Include="Views\Raumverwaltung\RaumDetails.cshtml" />
+    <Content Include="Views\Komponentenverwaltung\Index.cshtml" />
+    <Content Include="Views\Komponentenverwaltung\KomponenteHinzufuegen.cshtml" />
+    <Content Include="Views\Komponentenverwaltung\KomponenteDetails.cshtml" />
+    <Content Include="Views\Geraeteverwaltung\Index.cshtml" />
+    <Content Include="Views\Geraeteverwaltung\GeraetHinzufuegen.cshtml" />
+    <Content Include="Views\Geraeteverwaltung\GeraetDetails.cshtml" />
+    <Content Include="Views\Geraeteart\Index.cshtml" />
+    <Content Include="Views\Geraeteart\GeraeteartHinzufuegen.cshtml" />
+    <Content Include="Views\Geraeteart\GeraeteartDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
