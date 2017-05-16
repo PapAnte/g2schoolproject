@@ -760,7 +760,7 @@ pre code {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: 127px;
   margin-top: 2px;
 }
 
@@ -4183,6 +4183,16 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-width: 0 0 1px;
 }
 
+.navbar-fixed-side {
+  float: left;
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 142.25px;
+  border-width: 0 0 1px;
+}
+
 @media (min-width: 768px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -4196,6 +4206,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+.navbar-fixed-side {
   bottom: 0;
   margin-bottom: 0;
 }
@@ -4633,6 +4648,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar_ticket {
     float: right;
 }
+
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;

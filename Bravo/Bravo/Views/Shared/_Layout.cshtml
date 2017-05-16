@@ -36,8 +36,11 @@
                         <li>@Html.ActionLink("Lieferanten", "Index", "Lieferantenverwaltung")</li>
                         <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
                     </ul>
-                    @Html.Partial("_LoginPartial")
                 </div>
+            </div>
+        </div>
+        <div class="navbar_side navbar-inverse navbar-fixed-side">
+            <div class="container">
             </div>
         </div>
     <div class="container body-content">
@@ -50,7 +53,8 @@
 
         <div class="navbar_footer navbar-inverse navbar-fixed-bottom">
             <div class="container">
-                <input id="Button_Schulhomepage" type="button" value="Schulhomepage" onclick=""/>
+                <input id="Button_Passwort" type="button" value="Passwort ändern" onclick="" />
+                <input id="Button_Logout" type="button" value="Logout" onclick="" />
                 <div class="navbar_ticket">
                     <input id="Button_Ticket" type="button" value="Ticket" onclick="" />
                     <input id="Button_Hilfe" type="button" value="?" onclick="" />
