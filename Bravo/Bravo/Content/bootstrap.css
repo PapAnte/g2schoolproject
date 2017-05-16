@@ -761,6 +761,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 2px;
 }
 
 .container:before,
@@ -4627,6 +4628,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
 }
 
+.navbar_ticket {
+    float: right;
+}
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
