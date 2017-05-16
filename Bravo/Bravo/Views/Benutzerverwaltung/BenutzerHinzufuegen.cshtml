@@ -8,36 +8,30 @@
 <h3>Benutzer hinzufügen</h3>
 
 <div>
-    <p><a href="~/Benutzerverwaltung/BenutzerDetails">Benutzer-Liste</a></p>
+    <p><a href="~/Benutzerverwaltung/Index">Benutzer-Liste</a></p>
     <p><a href="~/Benutzerverwaltung/BenutzerHinzufuegen">Benutzer hinzufügen</a></p>
 </div>
 
 <div id="adduser">
-    <p>Anrede</p>
-    <select id="dropdown">
-        <option value="herr">Herr</option>
-        <option value="frau">Frau</option>
-    </select>
-    <p>Titel</p>
-    <input id="titel" type="text" />
-    <p>Name</p>
-    <input id="name" type="text" />
-    <p>Geburtsdatum</p>
+    <table>
+        <tr><td>Anrede</td><td><select id="dropdown">
+                                    <option value="herr">Herr</option>
+                                    <option value="frau">Frau</option>
+                               </select></td></tr>
+        <tr><td>Titel</td><td><input id="titel" type="text" /></td></tr>
+        <tr><td>Name</td><td><input id="name" type="text" /></td></tr>
+        <tr><td>Geburtsdatum</td><td><input id="geburtsdatum" type="text" /></td></tr>
+        <tr><td>Adresse</td><td><input id="adresse" type="text" /></td></tr>
+        <tr><td>E-Mail</td><td><input id="email" type="text" /></td></tr>
+        <tr><td>Benutzername</td><td><input id="benutzername" type="text" /></td></tr>
+    </table>
 
-
-    <p>Adresse</p>
-    <input id="adresse" type="text" />
-
-    <p>E-Mail</p>
-    <input id="email" type="text" />
-
-    <p>Benutzername</p>
-    <input id="benutzername" type="text" />
 
     <br /><br /><br />
     <input id="zurücksetzen" type="reset" value="Zurücksetzen" />
-
     <input id="erstellen" type="submit" value="Erstellen" />
+    <br /><br />
+    <input id="zurueck" type="submit" value="Zurück" />
 </div>
 
 
