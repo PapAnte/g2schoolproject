@@ -1,6 +1,6 @@
 ﻿namespace Bravo.ITVerwaltungDBInterface
 {
-	public enum DBResult
+	public enum DBResultMessage
 	{
 		Done,
 		PossibleDuplication,

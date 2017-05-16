@@ -181,7 +181,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ITVerwaltungDBInterface\DBResult.cs" />
+    <Compile Include="ITVerwaltungDBInterface\DBResultMessage.cs" />
     <Compile Include="ITVerwaltungDBInterface\ITVerwaltungDatabaseMgt.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />

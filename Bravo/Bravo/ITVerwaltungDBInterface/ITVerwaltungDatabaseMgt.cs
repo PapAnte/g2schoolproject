@@ -11,18 +11,18 @@ namespace Bravo.ITVerwaltungDBInterface
 		public const string DB_LOGIN_PW = "";
 		public const int DB_CONN_TIMEOUT = 15;
 
-		public static DBResult TryLogin(string username, string password, out string resultMessage)
+		public static DBResultMessage TryLogin(string username, string password, out string resultMessage)
 		{
 			// TODO
 			resultMessage = "Funktion nicht implementiert!";
-			return DBResult.Error;
+			return DBResultMessage.Error;
 		}
 
-		public static DBResult FunctionTemplate(string infoOne, int infoTwo, out string resultMessage)
+		public static DBResultMessage FunctionTemplate(string infoOne, int infoTwo, out string resultMessage)
 		{
 			// TODO
 			resultMessage = "Funktion nicht implementiert!";
-			return DBResult.Error;
+			return DBResultMessage.Error;
 		}
 
 		/// <summary>
