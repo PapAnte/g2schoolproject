@@ -4,5 +4,26 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>GeraeteartDetails</h2>
+<div>
+    <p><a href="~/Geraeteverwaltung/Index">Geräte-Liste</a></p>
+    <p><a href="~/Geraeteverwaltung/GeraetHinzufuegen">Gerät hinzufügen</a></p>
+    <p><a href="~/Geraetkomponentenverwaltung/Index">Gerätkomponenten-Liste</a></p>
+    <p><a href="~/Geraetkomponentenverwaltung/GeraetkomponenteHinzufuegen">Gerätekomponente hinzufügen</a></p>
+    <p><a href="~/Geraeteartverwaltung/Index">Geräteart-Liste</a></p>
+    <p><a href="~/Geraeteartverwaltung/GeraeteartHinzufuegen">Geräteart hinzufügen</a></p>
+</div>
 
+
+<h2>Geräteart bearbeiten</h2>
+
+
+<table style="width:100%;">
+    <tr><td>Bezeichnung</td><td><input id="bezeichnung" type="text" value="Geräteart" contenteditable="false" /></td></tr>    
+</table>
+
+<br />
+
+
+<input id="aendern" type="submit" value="Ändern" onclick="btnAendern_Click" class="btn btn-primary" />
+<input id="loeschen" type="submit" value="Löschen" onclick="btnLoeschen_Click" class="btn btn-primary" />
+<input id="zurueck" type="submit" value="Zurück" onclick="btnZurueck_Click" class="btn btn-primary" />

@@ -172,7 +172,7 @@
     <Compile Include="Controllers\GeraeteartverwaltungController.cs" />
     <Compile Include="Controllers\GeraeteverwaltungController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\GeraetekomponentenverwaltungController.cs" />
+    <Compile Include="Controllers\GeraetkomponentenverwaltungController.cs" />
     <Compile Include="Controllers\LieferantenverwaltungController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RaumverwaltungController.cs" />
@@ -253,9 +253,9 @@
     <Content Include="Views\Raumverwaltung\Index.cshtml" />
     <Content Include="Views\Raumverwaltung\RaumHinzufuegen.cshtml" />
     <Content Include="Views\Raumverwaltung\RaumDetails.cshtml" />
-    <Content Include="Views\Geraetekomponentenverwaltung\Index.cshtml" />
-    <Content Include="Views\Geraetekomponentenverwaltung\GeraetekomponenteHinzufuegen.cshtml" />
-    <Content Include="Views\Geraetekomponentenverwaltung\GeraetekomponenteDetails.cshtml" />
+    <Content Include="Views\Geraetkomponentenverwaltung\Index.cshtml" />
+    <Content Include="Views\Geraetkomponentenverwaltung\GeraetkomponenteHinzufuegen.cshtml" />
+    <Content Include="Views\Geraetkomponentenverwaltung\GeraetkomponenteDetails.cshtml" />
     <Content Include="Views\Geraeteverwaltung\Index.cshtml" />
     <Content Include="Views\Geraeteverwaltung\GeraetHinzufuegen.cshtml" />
     <Content Include="Views\Geraeteverwaltung\GeraetDetails.cshtml" />

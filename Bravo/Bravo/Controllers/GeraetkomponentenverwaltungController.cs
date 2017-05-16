@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Bravo.Controllers
 {
-    public class GeraetekomponentenverwaltungController : Controller
+    public class GeraetkomponentenverwaltungController : Controller
     {
         // GET: Komponentenverwaltung
         public ActionResult Index()
@@ -14,12 +14,12 @@ namespace Bravo.Controllers
             return View();
         }
 
-        public ActionResult GeraetekomponenteHinzufuegen()
+        public ActionResult GeraetkomponenteHinzufuegen()
         {
             return View();
         }
 
-        public ActionResult GeraetekomponenteDetails()
+        public ActionResult GeraetkomponenteDetails()
         {
             return View();
         }
