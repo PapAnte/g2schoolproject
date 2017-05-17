@@ -8,8 +8,14 @@
     <title>@ViewBag.Title - Datenbank-Frontend</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script>
-
+    <script type="text/javascript">
+        $(function () {
+            $("[id$=txtDate]").datepicker({
+                showOn: 'button',
+                buttonImageOnly: true,
+                buttonImage: 'http://jqueryui.com/demos/datepicker/images/calendar.gif'
+            });
+        });
     </script>
 
 </head>
@@ -78,5 +84,6 @@
                 </div>
             </div>
         </div>
+
 </body>
 </html>
