@@ -147,22 +147,22 @@ CREATE TABLE Ticket
 GO
 
 INSERT INTO Rechtevorlage
-	(ID, Bezeichnung, Lesen, Bearbeiten, Erstellen, Entfernen)
+	(Bezeichnung, Lesen, Bearbeiten, Erstellen, Entfernen)
 VALUES
-	(1, 'Reader', 1, 0, 0, 0),
-	(2, 'Editor', 1, 1, 0, 0),
-	(3, 'ExtEditor', 1, 1, 1, 0),
-	(4, 'Super', 1, 1, 1, 1);
+	('Reader', 1, 0, 0, 0),
+	('Editor', 1, 1, 0, 0),
+	('ExtEditor', 1, 1, 1, 0),
+	('Super', 1, 1, 1, 1);
 GO
 
 INSERT INTO Rechtegruppe
-	(ID, Bezeichnung, Benutzerverwaltung_Vollzugriff, Tickets, Austattung)
+	(Bezeichnung, Benutzerverwaltung_Vollzugriff, Tickets, Austattung)
 VALUES
-	(1, 'Root', 1, 4, 4),
-	(2, 'Admin', 1, 3, 3),
-	(3, 'IT-Azubi', 0, 3, 3),
-	(4, 'Lehrer', 0, 1, 1),
-	(5, 'Verwaltung', 0, 1, 1);
+	('Root', 1, 4, 4),
+	('Admin', 1, 3, 3),
+	('IT-Azubi', 0, 3, 3),
+	('Lehrer', 0, 1, 1),
+	('Verwaltung', 0, 1, 1);
 GO
 
 INSERT INTO WebBenutzer
