@@ -271,6 +271,7 @@
     <Content Include="Views\Softwareverwaltung\SoftwareHinzufuegen.cshtml" />
     <Content Include="Views\Softwareverwaltung\SoftwareDetails.cshtml" />
     <Content Include="Views\Ticketverwaltung\Index.cshtml" />
+    <Content Include="Views\Ticketverwaltung\TicketErstellen.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

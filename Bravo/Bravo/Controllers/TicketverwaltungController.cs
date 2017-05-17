@@ -13,5 +13,10 @@ namespace Bravo.Controllers
         {
             return View();
         }
+
+        public ActionResult TicketErstellen()
+        {
+            return View();
+        }
     }
 }
