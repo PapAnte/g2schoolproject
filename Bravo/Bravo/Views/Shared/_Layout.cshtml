@@ -1,5 +1,4 @@
-﻿
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -49,7 +48,7 @@
     @RenderSection("scripts", required: false)
 
         <div class="navbar_footer navbar-inverse navbar-fixed-bottom">
-            <div class="container">
+            <div class="container" style="float: right;">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -62,19 +61,7 @@
                         <li>@Html.ActionLink("Logout", "", "")</li>
                     </ul>
                 </div>
-                <div class="navbar-ticket">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
-                    </ul>
-                </div>
-                </div>
             </div>
         </div>
-
 </body>
 </html>
