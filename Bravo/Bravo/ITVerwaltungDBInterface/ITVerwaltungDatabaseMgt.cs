@@ -366,6 +366,20 @@ namespace Bravo.ITVerwaltungDBInterface
 		}
 
 		/// <summary>
+		/// Versucht, Notiz eines Tickets in der Datenbank zu editieren.
+		/// </summary>
+		/// <param name="id">Ticket-ID</param>
+		/// <param name="note">Notiz</param>
+		/// <param name="resultMessage">Ergebnis in Text-Form.</param>
+		/// <returns>Ergebnis</returns>
+		public static DBResultMessage TryUpdateTicketNote(string id, string note, out string resultMessage)
+		{
+			// TODO
+			resultMessage = "Funktion nicht implementiert!";
+			return DBResultMessage.Error;
+		}
+
+		/// <summary>
 		/// Versucht, Web-Benutzer in der Datenbank zu editieren.
 		/// </summary>
 		/// <param name="username">Benutzername</param>
