@@ -1,0 +1,80 @@
+﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Datenbank-Frontend</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+        <div class="navbar_header navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="~/Home/Index"><img src="/Bilder/Logo.png" alt="Logo"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Benutzer", "Index", "Benutzerverwaltung")</li>
+                        <li>@Html.ActionLink("Geräte", "Index", "Geraeteverwaltung")</li>
+                        <li>@Html.ActionLink("Software", "Index", "Softwareverwaltung")</li>
+                        <li>@Html.ActionLink("Raum", "Index", "Raumverwaltung")</li>
+                        <li>@Html.ActionLink("Lieferanten", "Index", "Lieferantenverwaltung")</li>
+                        <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar_side navbar-inverse navbar-fixed-side">
+            <div class="navbar_side_child navbar-inverse navbar-fixed-side-child">
+            </div>
+        </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+        <div class="navbar_footer navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Passwort ändern", "", "")</li>
+                        <li>@Html.ActionLink("Logout", "", "")</li>
+                    </ul>
+                </div>
+                <div class="navbar-ticket">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
