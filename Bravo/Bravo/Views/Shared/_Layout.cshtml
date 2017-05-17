@@ -24,7 +24,6 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
                     </button>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -34,8 +33,21 @@
                         <li>@Html.ActionLink("Software", "Index", "Softwareverwaltung")</li>
                         <li>@Html.ActionLink("Raum", "Index", "Raumverwaltung")</li>
                         <li>@Html.ActionLink("Lieferanten", "Index", "Lieferantenverwaltung")</li>
-                        <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
                     </ul>
+                </div>
+                <div class="navbar_header_child navbar-inverse navbar-fixed-top-child">
+                    <div class="container" style="float: right;">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,33 +62,22 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-
-        <div class="navbar_footer navbar-inverse navbar-fixed-bottom">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Passwort ändern", "", "")</li>
-                        <li>@Html.ActionLink("Logout", "", "")</li>
-                    </ul>
-                </div>
-                <div class="navbar-ticket">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Ticket", "Index", "Ticketverwaltung")</li>
-                    </ul>
-                </div>
-                </div>
+    </div>
+    <div class="navbar_footer navbar-inverse navbar-fixed-bottom">
+        <div class="container" style="float: right;">
+            <div class="navbar-footer">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Passwort ändern", "", "")</li>
+                    <li>@Html.ActionLink("Logout", "", "")</li>
+                </ul>
             </div>
         </div>
+    </div>
 </body>
 </html>
