@@ -4,10 +4,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="navbar-fixed-side-child">
-    <p><a href="~/Ticketverwaltung/Index">Software-Liste</a></p>
-    <p><a href="~/Ticketverwaltung/TicketErstellen">Ticket erstellen</a></p>
+<div class="navbar_side_child navbar-inverse navbar-fixed-side-child">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Übersicht Tickets", "Index", "Ticketverwaltung")</li>
+            <li>@Html.ActionLink("Ticket erstellen", "TicketErstellen", "Ticketverwaltung")</li>
+        </ul>
+    </div>
 </div>
 
-<h2>Index</h2>
+<h3>Übersicht Tickets</h3>
 

@@ -4,5 +4,38 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>TicketErstellen</h2>
+<div class="navbar_side_child navbar-inverse navbar-fixed-side-child">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Übersicht Tickets", "Index", "Ticketverwaltung")</li>
+            <li>@Html.ActionLink("Ticket erstellen", "TicketErstellen", "Ticketverwaltung")</li>
+        </ul>
+    </div>
+</div>
 
+<h3>Ticket erstellen</h3>
+
+<div id="content">
+    <table>
+        <tr><td>Bezeichnung</td><td><input id="bezeichnung" type="text" /></td></tr>
+        <tr><td>Notiz</td><td><input id="notiz" type="text" /></td></tr>
+        <tr><td>Ersteller</td><td><input id="ersteller" type="text" /></td></tr>
+        <tr><td>Bearbeiter</td><td><input id="bearbeiter" type="text" /></td></tr>
+    </table>
+
+
+    <br /><br /><br />
+    <div id="">
+        <input id="zurücksetzen" type="reset" value="Zurücksetzen" class="btn btn-primary" />
+        <input id="erstellen" type="submit" value="Erstellen" class="btn btn-primary" />
+        <br /><br />
+        <input id="zurueck" type="submit" value="Zurück" class="btn btn-primary" />
+    </div>
+
+</div>
