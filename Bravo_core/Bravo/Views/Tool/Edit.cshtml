@@ -1,0 +1,33 @@
+﻿@using Bravo.Models.ViewModels.Tool
+
+@model ToolEditViewModel
+
+
+@{
+    bool newTool = Model.Id == 0;
+    ViewData["Title"] = !newTool ? "Gerät - " + Model.Name : "Neues Gerät";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-controller="Tool" asp-action="Edit" method="post">
+    @if (!newTool)
+    {
+        <div class="row">
+            <div class="col-md-2"><label asp-for="Id"></label></div>
+            <div class="col-md-10"><span>@Model.Id <input asp-for="Id" type="hidden" /></span></div>
+        </div>
+    }
+    <div class="row">
+        <div class="col-md-2"><label asp-for="Name"></label></div>
+        <div class="col-md-10"><input asp-for="Name" type="text" /></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <button class="btn btn-primary fa fa-floppy-o" type="submit"></button>
+            <a class="btn fa fa-times" asp-controller="Tool" asp-action="Index"></a>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,35 @@
+﻿@using Bravo.Models.ViewModels.Tool
+
+@model ToolIndexViewModel
+
+@{
+    ViewData["Title"] = "Geräte";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    
+
+    <table class="table" id="brave-toolTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th></th>
+                <th><a class="btn fa fa-plus" asp-area="" asp-controller="Tool" asp-action="Edit" asp-route-id="0"></a></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.ToolList)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td><a class="btn fa fa-pencil-square" asp-area="" asp-controller="Tool" asp-action="Edit" asp-route-id="@item.Id"></a></td>
+                    <td></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>   

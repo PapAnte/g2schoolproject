@@ -19,7 +19,7 @@ namespace Bravo.ITVerwaltungDBInterface
 		/// <summary>
 		/// Versucht einen Benutzer einzuloggen.
 		/// </summary>
-		/// <param name="username">Benutzername</param>
+		/// <param name="username">Benutzername</param>6
 		/// <param name="password">Benutzerpasswort</param>
 		/// <param name="resultMessage">Ergebnis in Text-Form.</param>
 		/// <returns>Ergbebnis</returns>

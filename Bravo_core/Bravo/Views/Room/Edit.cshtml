@@ -1,0 +1,54 @@
+﻿@using Bravo.Models.ViewModels.Room
+
+@model RoomEditViewModel
+
+
+@{
+    bool newRoom = Model.Id == 0;
+    ViewData["Title"] = !newRoom ? "Raum - " + Model.Name : "Neuer Raum";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-controller="Room" asp-action="Edit" method="post">
+    @if (!newRoom)
+    {
+        <div class="row form-group">
+            <div class="col-md-2"><label asp-for="Id"></label></div>
+            <div class="col-md-10"><span>@Model.Id <input asp-for="Id" type="hidden" /></span></div>
+        </div>
+    }
+
+    <div class="row form-group">
+        <div class="col-md-2"><label asp-for="Name"></label></div>
+        <div class="col-md-10"><input asp-for="Name" class="form-control" type="text" /></div>
+    </div>
+
+    <div class="row form-group">
+        <div class="col-md-2"><label asp-for="ToolListFromRoom">Geräte-Liste</label></div>
+        <div id="bravo-tool-list" class="col-md-10">
+            @for (int i = 0; i < Model.ToolListFromRoom.Count; i++)
+            {
+                var tool = Model.ToolListFromRoom[i];
+                <div>
+                    <input asp-for="ToolListFromRoom[i].Id" type="hidden" />
+                    <input class="bravo-tool" asp-for="ToolListFromRoom[i].Name" type="hidden" />
+                    <div class="badge">@tool.Name</div>
+                </div>
+            }
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-10"><select id="brave-tool-select" class="form-control" asp-items="@(new SelectList(Model.AllTools,"Id","Name"))"></select> <button class="btn fa fa-plus" id="bravo-button-tool-add"></button></div>
+
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+            <button class="btn btn-primary fa fa-floppy-o" type="submit"></button>
+            <a class="btn fa fa-times" asp-controller="Room" asp-action="Index"></a>
+        </div>
+    </div>
+</form>
