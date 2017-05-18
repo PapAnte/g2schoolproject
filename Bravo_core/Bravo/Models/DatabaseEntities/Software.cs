@@ -11,6 +11,7 @@ namespace Bravo.Models.DatabaseEntities
 {
     public interface ISoftware : IEntity
     {
+        string Bezeichnung { get; set; }
         ICollection<IRoom> Rooms { get; }
         ICollection<Software_in_Raum> Software_in_Raum { get; set; }
     }

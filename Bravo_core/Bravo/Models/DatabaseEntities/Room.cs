@@ -12,6 +12,7 @@ namespace Bravo.Models.DatabaseEntities
     {
         string Notiz { get; set; }
         ICollection<ITool> Tools { get; }
+        ICollection<ISoftware> Software { get; }
         ICollection<RoomToolRelation> RoomToolRelations { get; set; }
     }
 
@@ -26,5 +27,6 @@ namespace Bravo.Models.DatabaseEntities
 
         [NotMapped]
         public ICollection<ITool> Tools { get { return this.RoomToolRelations?.Select(s => s.Tool).ToList<ITool>(); } }
+        public ICollection<ISoftware> Software { get { return this.Software_in_Raum?.Select(s => s.Software).ToList<ISoftware>(); } }
     }
 }
